@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatting.main.iml" filepath="$PROJECT_DIR$/.idea/modules/chatting.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/websocket-chatting.iml" filepath="$PROJECT_DIR$/.idea/websocket-chatting.iml" />
     </modules>
   </component>

@@ -8,7 +8,7 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 @Slf4j
 @Component
-public class WebsocketHandler extends TextWebSocketHandler {
+public class WebsockHandler extends TextWebSocketHandler {
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
