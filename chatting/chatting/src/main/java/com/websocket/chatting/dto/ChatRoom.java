@@ -1,15 +1,12 @@
 package com.websocket.chatting.dto;
 
-import com.websocket.chatting.service.ChatService;
-import lombok.Builder;
 import lombok.Getter;
-import org.springframework.web.socket.WebSocketSession;
+import lombok.Setter;
 
-import java.util.HashSet;
-import java.util.Set;
 import java.util.UUID;
 
 @Getter
+@Setter
 public class ChatRoom {
     private String roomId;
     private String name;
