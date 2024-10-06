@@ -12,7 +12,8 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service
 public class ChatRoomRepository {
-    // Redis
+    /** Redis를 이용하여 채팅방을 저장하고 관리하는 역할을 수행한다. 이 클래스는 Redis의 Hash 자료구조
+     * 를 사용해 채팅방 정보를 저장하며, 채팅방 목록을 조회하거나 새로운 채팅방을 생성하는 기능을 제공*/
     private static final String CHAT_ROOMS = "CHAT_ROOM";
     private final RedisTemplate<String, Object> redisTemplate;
     private HashOperations<String, String, ChatRoom> opsHashChatRoom;
