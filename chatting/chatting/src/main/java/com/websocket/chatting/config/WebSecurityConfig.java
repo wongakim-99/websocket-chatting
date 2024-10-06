@@ -12,6 +12,11 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
+/** WebSocket 기반 채팅 애플리케이션에서 간단한 보안 설정을 적용하며, 특히 In-Memory 사용자 관리와
+ * Spring Security 를 통해 기본적인 인증 및 권한 부여를 설정하고, 개발 및 테스트 목적으로 설계된 코드.
+ *
+ * 실제 운영 환경에서는 데이터베이스와 연동하여 사용자 정보를 관리하고, 적절한 비밀번호와 인코더를 사용하는게 필수*/
+
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
