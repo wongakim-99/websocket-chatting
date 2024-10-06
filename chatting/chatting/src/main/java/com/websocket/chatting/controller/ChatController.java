@@ -14,6 +14,8 @@ import org.springframework.stereotype.Controller;
 @RequiredArgsConstructor
 @Controller
 public class ChatController {
+    /**WebSocket을 통해 들어오는 채팅 메시지를 처리하고, 이를 Redis를 통해 다른 클라이언트에게 전달하는 역할
+     * 이 컨트롤러는 특히 WebSocket 통신과 Redis pub/sub 시스템을 사용하여 채팅 메시지를 실시간 관리*/
 
     private final RedisTemplate<String, Object> redisTemplate;
     private final JwtTokenProvider jwtTokenProvider;
