@@ -19,8 +19,11 @@ import java.util.List;
 public class ChatRoomController {
 
     private final ChatRoomRepository chatRoomRepository;
-
     private final JwtTokenProvider jwtTokenProvider;
+
+    /**ChatRoomController 클래스 같은 경우 채팅방 관리와 사용자 정보 조회를 처리하는 컨트롤러이다.
+     * 주요 기능은 새로운 채팅방을 생성하거나, 채팅방 목록을 조회하고, 특정 채팅방에 대한 정보를 제공하는 역할
+     * JWT 토큰을 생성해 사용자 정보를 제공하는 기능도 포함되어 있다.*/
 
     @GetMapping("/room")
     public String rooms() {
